@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dati Anagrafici</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Librerie css di Google Font per cambiare font alle scritte(modificano css) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Inserimento Dati Personali</h1>
+    <div id="inserimento">
+        <div id="datianagrafici">
+            <form id="formdati">
+                <h3>Dati Anagrafici</h3>
+                <label>Nome</label><br>
+                <input type="text" placeholder="Nome" id="nome"><br>
+                <label>Cognome</label><br>
+                <input type="text" placeholder="Cognome" id="cognome"><br>
+                <label>Codice Fiscale</label><br>
+                <input type="text" placeholder="Codice Fiscale" id="codicef"><br>
+                <label>Data Di Nascita</label><br>
+                <input type="date" placeholder="Data Di Nascita" id="datanascita"><br><br>
+                <input type="button" class="button" id="inseriscidatianagrafici" value="Inserisci" />
+            </form>
+        </div>
+
+        <div id="contatti"> 
+            <form id="formcontatti">
+                <h3>Contatti</h3>
+                <label>Numero Telefonico</label><br>
+                <input type="tel" placeholder="Numero Telefonico" id="numerotell"><br>
+                <label>E-mail</label><br>
+                <input type="text" placeholder="E-mail" id="email"><br>
+                <label>Indirizzo</label><br>
+                <input type="text" placeholder="Indirizzo" id="indirizzo"><br>
+                <input type="button" class="button" id="inseriscicontatti" value="Inserisci" />
+            </form>
+        </div>
+
+        <div id="datipersonali"> 
+            <form id="formdatipersonali">
+                <h3>Dati Personali</h3>
+                <label>Impiego</label><br>
+                <input type="text" placeholder="Impiego" id="impiego"><br>
+                <label>Stato Civile</label><br>
+                <select  id="statocivile">
+                    
+                    <option value="Celibe/Nubile">Celibe/Nubile</option>
+                    <option value="Coniugato/a">Coniugato/a</option>
+                    <option value="Vedovo/a">Vedovo/a</option>
+                    <option value="Divorziato/a">Divorziato/a</option>
+                    <option value="Non classificabile/ignoto/n.c">Non classificabile/ignoto/n.c</option>
+                </select>
+                <br>
+                <input type="button" class="button" id="inseriscidatipersonali" value="Inserisci" />
+            </form>
+        </div>
+
+    </div>
+
+    <div id="risultato">
+        <div id="datianagraficirisp">
+            <form id="formdatirisp" >
+                <h3>Dati Anagrafici Inseriti</h3>
+                <label>Nome</label><br>
+                <p id="nomerisp" ></p>
+                <label>Cognome</label><br>
+                <p id="cognomerisp" ></p>
+                <label>Codice Fiscale</label><br>
+                <p id="codicefrisp" ></p>
+                <label>Data Di Nascita</label><br>
+                <p id="datanascitarisp" ></p><br><br>
+            </form>
+        </div>
+
+        <div id="contattirisp">
+            <form id="formcontattirisp">
+                <h3>Contatti Inseriti</h3>
+                <label>Numero Telefonico</label><br>
+                <p id="numerotellrisp" ></p>
+                <label>E-mail</label><br>
+                <p id="emailrisp" ></p>
+                <label>Indirizzo</label><br>
+                <p id="indirizzorisp" ></p>
+            </form>
+        </div>
+
+        <div id="datipersonalirisp">
+            <form id="formdatipersonalirisp">
+                <h3>Dati Personali Inseriti</h3>
+                <label>Impiego</label><br>
+                <p id="impiegorisp" ></p>
+                <label>Stato Civile</label><br>
+                <p id="statocivilerisp" ></p>
+            </form>
+        </div>
+
+    </div>
+
+    <script type="module" src="./main.js"></script>
+    
+</body>
+
+</html>
